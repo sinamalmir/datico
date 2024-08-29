@@ -107,7 +107,7 @@ themeswitcher.forEach(item => {
 //     },
 //   });
 
-  var swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -121,6 +121,20 @@ themeswitcher.forEach(item => {
     },
   });
 
+  const swiper2 = new Swiper('.mySwiper2', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.mySwiper2 .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-btn-test .swiper-button-next-2',
+        prevEl: '.swiper-btn-test .swiper-button-prev-2',
+    },
+    // Additional options can go here
+});
 
 
 // search icon

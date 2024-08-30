@@ -677,4 +677,28 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.933210784313725
     transition: all;
     transition-duration: 300ms;
 }
-
+article h1{
+    font-size: 24px;
+    margin-bottom: 4px ;
+    font-weight: 700;
+}
+article h2{
+    font-size: 22px;
+    margin-bottom: 4px ;
+    font-weight: 700;
+}
+article h3{
+    font-size: 20px;
+    margin-bottom: 4px ;
+    font-weight: 700;
+}
+article h4{
+    font-size: 18px;
+    margin-bottom: 4px ;
+    font-weight: 700;
+}
+article img{
+    border-radius: 10px;
+    margin: 8px 0;
+    overflow: hidden;
+}

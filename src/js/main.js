@@ -36,51 +36,51 @@
 
 
 
-const sunIcon = document.querySelector(".sun")
-const moonIcon = document.querySelector(".moon") 
+// const sunIcon = document.querySelector(".sun")
+// const moonIcon = document.querySelector(".moon") 
 
-const userTheme = localStorage.getItem("theme")
-console.log(userTheme);
-const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches; 
-console.log(systemTheme)
-
-
-if(userTheme === "dark" || (!userTheme && systemTheme ) ){
-    document.documentElement.classList.add("dark");
-    sunIcon.classList.add("hidden");
-    moonIcon.classList.remove("hidden");
-}else{
-    document.documentElement.classList.remove("dark");
-    moonIcon.classList.add("hidden");
-    sunIcon.classList.remove("hidden");
-}
+// const userTheme = localStorage.getItem("theme")
+// console.log(userTheme);
+// const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches; 
+// console.log(systemTheme)
 
 
-const themeswitcher = document.querySelectorAll(".theme-switcher");
+// if(userTheme === "dark" || (!userTheme && systemTheme ) ){
+//     document.documentElement.classList.add("dark");
+//     sunIcon.classList.add("hidden");
+//     moonIcon.classList.remove("hidden");
+// }else{
+//     document.documentElement.classList.remove("dark");
+//     moonIcon.classList.add("hidden");
+//     sunIcon.classList.remove("hidden");
+// }
 
-themeswitcher.forEach(item => {
-    item.addEventListener('click' ,(e)=>{
-        e.preventDefault();
-        const theme = e.target.dataset.theme;
-        switch (theme) {
-            case "dark":
-                document.documentElement.classList.add("dark");
-                localStorage.setItem("theme", "dark");
-                sunIcon.classList.add("hidden")
-                moonIcon.classList.remove("hidden")
-                break;
-            case "light": 
-                document.documentElement.classList.remove("dark");
-                localStorage.setItem("theme", "light");
-                sunIcon.classList.remove("hidden")
-                moonIcon.classList.add("hidden")
-                break;
+
+// const themeswitcher = document.querySelectorAll(".theme-switcher");
+
+// themeswitcher.forEach(item => {
+//     item.addEventListener('click' ,(e)=>{
+//         e.preventDefault();
+//         const theme = e.target.dataset.theme;
+//         switch (theme) {
+//             case "dark":
+//                 document.documentElement.classList.add("dark");
+//                 localStorage.setItem("theme", "dark");
+//                 sunIcon.classList.add("hidden")
+//                 moonIcon.classList.remove("hidden")
+//                 break;
+//             case "light": 
+//                 document.documentElement.classList.remove("dark");
+//                 localStorage.setItem("theme", "light");
+//                 sunIcon.classList.remove("hidden")
+//                 moonIcon.classList.add("hidden")
+//                 break;
     
-            default:
-                break;
-        }
-    } )
-})
+//             default:
+//                 break;
+//         }
+//     } )
+// })
 
 
 // var swiper = new Swiper(".mySwiper", {
@@ -143,3 +143,43 @@ $(document).ready(function (){
         $('.search-icon').slideToggle();
     })
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+  // open
+  const burger = document.querySelectorAll('.navbar-burger');
+  const menu = document.querySelectorAll('.navbar-menu');
+
+  if (burger.length && menu.length) {
+      for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', function() {
+              for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle('hidden');
+              }
+          });
+      }
+  }
+
+  // close
+  const close = document.querySelectorAll('.navbar-close');
+  const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+  if (close.length) {
+      for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener('click', function() {
+              for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle('hidden');
+              }
+          });
+      }
+  }
+
+  if (backdrop.length) {
+      for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener('click', function() {
+              for (var j = 0; j < menu.length; j++) {
+                  menu[j].classList.toggle('hidden');
+              }
+          });
+      }
+  }
+});

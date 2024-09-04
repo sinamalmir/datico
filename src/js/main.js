@@ -107,7 +107,7 @@
 //     },
 //   });
 
-  const swiper = new Swiper(".mySwiper", {
+  const swiper1 = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -130,8 +130,8 @@
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-btn-test .swiper-button-next-2',
-        prevEl: '.swiper-btn-test .swiper-button-prev-2',
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
     },
     // Additional options can go here
 });

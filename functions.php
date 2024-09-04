@@ -25,36 +25,21 @@ function add_theme_scripts()
 
 add_action('wp_enqueue_scripts' , 'add_theme_scripts');
 
-function dana_setup_theme()
-{
-    add_theme_support('title-tag');
-    add_theme_support('automatic-feed-links');
-    add_theme_support('post-thumbnails');
-    add_image_size('main-content-img' , 170 ,116 ,true);
-    add_image_size('video_left_img' , 743 ,743 ,true);
-
-    register_nav_menus(
-        array(
-            'main-menu' => __( 'جایگاه فهرست اصلی ' ),
-            'extra-menu' => __( ' جایگاه فهرست بالای سایت ' )
-        )
-    );
-}
-
-add_action('after_setup_theme', 'dana_setup_theme');
+include_once 'inc/theme_setup.php';
 
 
 function custom_excerpt_length()
 {
-    return 11;
+    return 20;
 }
 
 add_filter('excerpt_length' , 'custom_excerpt_length',999);
 
+function new_excerpt_more( $more ) {
+	return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
-
-require_once 'inc/tv-posttype.php';
-require_once 'inc/video-tv.php';
 
 
 
@@ -87,7 +72,5 @@ add_action( 'widgets_init', 'danati_widgets_init' );
 
 
 
-require_once 'theme-options/setting.php';
-require_once 'theme-options/image-select.php';
-require_once 'theme-options/cmb2_swirch_button.php';
+
 

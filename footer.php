@@ -1,50 +1,6 @@
 
 <!-- start footer -->
 
-<?php
-$footer = danati_get_option('sina_theme_footer_options');
-$footer_bg = $footer[0]['sina_theme_background_footer_option'];
-?>
-<style>
-    .foooter{
-        background-color: <?php echo $footer_bg." !important";  ?>;
-    }
-</style>
-<?php
-$footer_txt_title = $footer[0]['sina_theme_textColor_title_footer_option'];
-?>
-<style>
-    .foooter h4{
-        color: <?php echo $footer_txt_title." !important";  ?>;
-    }
-</style>
-<?php
-$footer_txt = $footer[0]['sina_theme_textColor_link_footer_option'];
-?>
-<style>
-    .foooter p {
-        color: <?php echo $footer_txt." !important";  ?>;
-    }
-</style>
-<?php
-$copyright_bg = $footer[0]['sina_theme_copyright_background_footer_option'];
-?>
-<style>
-    .foooter .copyright {
-        background-color: <?php echo $copyright_bg." !important";  ?>;
-    }
-</style>
-<?php
-$copyright = $footer[0]['sina_theme_copyright_text_footer_option'];
-?>
-<style>
-    .foooter .copyright  span{
-        color: <?php echo $copyright." !important";  ?>;
-    }
-</style>
-<?php
-
-?>
 
 <footer class="foooter  mt-10 bg-white dark:bg-black  border-t border-t-lightBorder dark:border-t-darkBorder   ">
 
@@ -140,10 +96,7 @@ $copyright = $footer[0]['sina_theme_copyright_text_footer_option'];
     <div class="bg-darkMain copyright ">
         <div class="flex container items-center justify-center w-full  text-darkTextMain py-5   " >
             <span >
-                <?php
-                    $copyright_txt = $footer[0]['sina_theme_copyright_footer_option'];
-                    echo $copyright_txt;
-                ?>
+
 
             </span>
         </div>

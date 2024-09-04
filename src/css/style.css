@@ -30,7 +30,19 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.18253238
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(109,109,255,0.18253238795518212) 48%, rgba(255,255,255,0) 100%);
 
 }
-
+.swiper-button-next-2:after, .swiper-button-prev-2:after {
+    font-family: swiper-icons;
+    font-size: 12px;
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    font-weight: bold;
+    background-color: #0b73ea !important;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
 /* .swiper {
     width: 100%;
     height: 100%;
@@ -621,9 +633,13 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.933210784313725
 .item-card:hover h3{
     bottom: 80px;
 }
+.item-card:hover{
+    transition: all 300ms ease-in-out;
+}
 .item-card:hover p{
     bottom: 10px;
     display: inline-block;
+
 
 }
 

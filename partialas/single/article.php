@@ -6,6 +6,9 @@ while (have_posts()) : the_post();
 <div class="md:col-span-8 flex flex-col gap-8 ">
 	<article class=" py-7 px-3 md:px-6 border border-lightBorder rounded-lg  ">
 		<div class=" ">
+            <ul class="flex gap-1 flex-wrap breadcrumb-custom items-center">
+	            <?php Breadcrumb::get_breadcrumb(); ?>
+            </ul>
 			<h1 class="px-3 py-2 font-semibold text-xl md:text-2xl mb-3 "> <?php echo  get_the_title(); ?> </h1>
 			<div class="flex items-center gap-4 flex-wrap mb-3 ">
 <!--				<img src="../assets/img/user-profile.jpg" alt="" class=" w-8 object-cover rounded-full  " >-->

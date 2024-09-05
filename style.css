@@ -34,3 +34,14 @@
 .author-section > .avatar {
     border-radius: 100% !important;
 }
+.breadcrumb-custom  {
+    color: lightslategray;
+    font-size: 10px ;
+    font-weight: 300;
+}
+.breadcrumb-custom a {
+    color: blue;
+    font-size: 10px ;
+    font-weight: 300;
+}
+

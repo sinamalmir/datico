@@ -30,3 +30,7 @@
     padding: 10px;
     border-radius: 50%;
 }
+
+.author-section > .avatar {
+    border-radius: 100% !important;
+}

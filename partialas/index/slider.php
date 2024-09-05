@@ -22,7 +22,7 @@
 							if ($the_query->have_posts());
 							while ($the_query->have_posts()) : $the_query->the_post();
 							?>
-							<a href="" class="flex item-slider-custom justify-start flex-col gap-1">
+							<a href="<?php the_permalink(); ?>" class="flex item-slider-custom justify-start flex-col gap-1">
 								<span class="text-xs text-lightMain"> <?php echo  get_the_date('j F Y')?> </span>
 								<h3 class="font-bold "> <?php echo get_the_title(); ?> </h3>
 								<div class="flex gap-2 items-center">

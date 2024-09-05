@@ -54,9 +54,9 @@ function danati_widgets_init() {
         'name'          => __( 'ناحیه کناری سایدبار(برای صفحه اصلی)'),
         'id'            => 'danati-sidebar',
         'description'   => __( 'test description' ),
-        'before_widget' => '<div class="p-4   bg-[#EBF4F6] mb-5 rounded-lg   ">',
+        'before_widget' => '<div class="py-7 mb-5 px-5 widget-style ">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="text-title  dark:text-darkTitle  font-semibold text-lg items-center px-3 border-r-8 border-r-[#F05827]">',
+        'before_title'  => '<h2 class="px-3 py-2 font-bold border-b-2 border-b-tag mb-3 ">',
         'after_title'   => '</h2>',
     ) );
 

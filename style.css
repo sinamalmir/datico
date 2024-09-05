@@ -95,3 +95,33 @@
 #toc-toggle:hover {
     background-color: #005177;
 }
+.widget-style > ul > li {
+    display: flex;
+    justify-content: space-between;
+    color: #8a8a8a;
+    margin-bottom: 8px;
+}
+.widget-style > ul > li:hover{
+    color: #0b73ea;
+    padding-right: 5px;
+    transition: all 300ms ease-in-out;
+}
+.wmt-smart-tabs ul.wmt-col-2 li.selected {
+    border-top:3px solid #0b73ea !important;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+.wmt-smart-tabs .wmt-tabs-content .wmt-widget-title {
+    margin-top: 10px !important;
+    white-space: normal !important;
+}
+.wmt-smart-tabs .wmt-tabs-content .wmt-thumb img {
+    max-width: 90px;
+    border-radius: 9px;
+    width: 100%;
+    margin-bottom: 5px;
+    max-height: 53px;
+    object-fit: cover;
+}

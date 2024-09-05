@@ -2,6 +2,7 @@
 if (have_posts()) :
 while (have_posts()) : the_post();
 	PostVeiw::dwt_set_post_view(get_the_ID());
+	ReadEstimateTime::dwt_read_estimate_time(get_the_ID());
 ?>
 
 <div class="md:col-span-8 flex flex-col gap-8 ">
@@ -36,8 +37,8 @@ while (have_posts()) : the_post();
                     </svg>
 
                       خواند این مطلب
-
-                      ۹ دقیقه زمان میبرد
+  <?php echo ReadEstimateTime::dwt_read_estimate_time('','300') ?>
+                       دقیقه زمان میبرد
                   </span>
 			</div>
 			<figure class=" mb-2 ">

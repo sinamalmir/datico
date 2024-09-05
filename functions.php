@@ -28,6 +28,7 @@ add_action('wp_enqueue_scripts' , 'add_theme_scripts');
 include_once 'inc/theme_setup.php';
 include_once 'inc/Breadcrumb.php';
 include_once 'inc/PostView.php';
+include_once 'inc/ReadEstimateTime.php';
 
 function custom_excerpt_length()
 {

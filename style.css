@@ -45,3 +45,53 @@
     font-weight: 300;
 }
 
+#toc {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+#toc h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc ul li {
+    margin-bottom: 5px;
+}
+
+#toc ul li a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+#toc ul li a:hover {
+    text-decoration: underline;
+}
+
+#toc ul {
+    display: none;
+}
+
+#toc-toggle {
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 24%;
+    left: 10px;
+}
+
+#toc-toggle:hover {
+    background-color: #005177;
+}

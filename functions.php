@@ -29,6 +29,7 @@ include_once 'inc/theme_setup.php';
 include_once 'inc/Breadcrumb.php';
 include_once 'inc/PostView.php';
 include_once 'inc/ReadEstimateTime.php';
+include_once 'partialas/single/table-of-content.php';
 
 function custom_excerpt_length()
 {

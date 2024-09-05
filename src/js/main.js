@@ -107,6 +107,20 @@
 //     },
 //   });
 
+jQuery(document).ready(function($) {
+    var toc = $('#toc ul');
+    toc.hide(); // Hide the TOC by default
+
+    $('<button id="toc-toggle" style="margin-bottom:10px;">' +
+        '<svg xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="#999999"></path></svg>' +
+        '</button>').insertBefore(toc);
+
+    $('#toc-toggle').click(function() {
+        toc.toggle();
+        $(this).text($(this).text() == '▽' ? '▽' : '▽');
+    });
+});
+
   const swiper1 = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,

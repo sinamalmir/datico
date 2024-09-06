@@ -22,19 +22,19 @@
 								<?php
 								$args = [
 									'post_type' => ['post'],
-									'showposts'=> 4
+									'showposts'=> 6
 								];
 								$the_query = new WP_Query($args);
 								if ($the_query->have_posts());
 								while ($the_query->have_posts()) : $the_query->the_post();
 								?>
 
-								<a href="#" class="   ">
+								<a href="<?php the_permalink(); ?>"  >
 
 									<?php
 									if (has_post_thumbnail()){
 										the_post_thumbnail('',array(
-											'class' => 'rounded-lg  w-full',
+											'class' => 'rounded-lg  main-content-height w-full',
 											'alt'=> get_the_title(),
 										));
 									}else{
@@ -96,7 +96,7 @@
 								while ($the_query->have_posts()) : $the_query->the_post();
 									?>
 
-									<a href="#" class="   ">
+									<a href="<?php the_permalink(); ?>" class="   ">
 
 										<?php
 										if (has_post_thumbnail()){

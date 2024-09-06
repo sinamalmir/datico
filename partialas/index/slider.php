@@ -2,7 +2,7 @@
 <div class="container p-5 ">
 	<div class=" py-7 px-3 border border-lightBorder rounded-lg ">
 		<div class="relative  ">
-			<h2 class="px-3 py-2 border-b-2 border-b-tag mb-3 "> اخبار و مقالات </h2>
+			<h2 class="px-3 py-2 border-b-2 border-b-tag mb-3 ">  مقالات </h2>
 			<div class=" swiper-button-next"></div>
 			<div class=" swiper-button-prev"></div>
 		</div>
@@ -29,7 +29,7 @@
                                     <?php
                                         if (has_post_thumbnail()){
                                             the_post_thumbnail('',array(
-                                                    'class' => 'max-w-[110px] rounded-lg object-cover',
+                                                    'class' => 'max-w-[110px] slider-img  rounded-lg object-cover',
                                                     'alt'=> get_the_title(),
                                             ));
                                         }else{

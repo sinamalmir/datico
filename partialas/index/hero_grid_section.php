@@ -13,7 +13,7 @@
 		if ($the_query->have_posts());
 		while ($the_query->have_posts()) : $the_query->the_post();
 		?>
-		<a href="#" class="block relative item-card ">
+		<a href="<?php the_permalink(); ?>" class="block relative item-card ">
 			<figure>
 				<?php
 				if (has_post_thumbnail()){
@@ -55,7 +55,7 @@
 			if ($the_query->have_posts());
 			while ($the_query->have_posts()) : $the_query->the_post();
 			?>
-			<a href="#" class=" relative item-card transition duration-300">
+			<a href="<?php the_permalink(); ?>" class=" relative item-card transition duration-300">
 				<figure>
 					<?php
 					if (has_post_thumbnail()){

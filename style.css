@@ -167,3 +167,21 @@
     color: #fff;
     margin-left: 3px;
 }
+form.searchform > div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px !important;
+}
+input#s {
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 6px;
+    padding: 9px 12px;
+    margin-left: 4px;
+}
+input#searchsubmit {
+    background-color: #1B75E7;
+    color: white;
+    padding: 9px 5px;
+    border-radius: 6px;
+}

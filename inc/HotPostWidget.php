@@ -35,7 +35,7 @@ class HotPostWidget extends WP_Widget
 			?>
 
                 <div>
-                    <a href="#" class="flex item-slider-custom items-center gap-3 ">
+                    <a href="<?php the_permalink(); ?>" class="flex item-slider-custom items-center gap-3 ">
                         <?php
                         if (has_post_thumbnail()){
                             the_post_thumbnail('',array(

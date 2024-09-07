@@ -29,7 +29,7 @@ while (have_posts()) : the_post();
 				}
 				?>
 			</figure>
-			<p class="text-sm overflow-hidden md:text-lg ">
+			<p class="text-sm overflow-hidden md:text-lg article-content ">
 
 				<?php the_content(); ?>
 

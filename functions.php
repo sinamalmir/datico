@@ -30,6 +30,8 @@ include_once 'inc/Breadcrumb.php';
 include_once 'inc/PostView.php';
 include_once 'inc/ReadEstimateTime.php';
 include_once 'partialas/single/table-of-content.php';
+include_once 'inc/TimeModify.php';
+include_once 'inc/HotPostWidget.php';
 
 function custom_excerpt_length()
 {
@@ -51,22 +53,22 @@ add_filter('excerpt_more', 'new_excerpt_more');
  */
 function danati_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'ناحیه کناری سایدبار(برای صفحه اصلی)'),
-        'id'            => 'danati-sidebar',
+        'name'          => __( 'ناحیه کناری سایدبار'),
+        'id'            => 'sidebar-1',
         'description'   => __( 'test description' ),
-        'before_widget' => '<div class="py-7 mb-5 px-5 widget-style ">',
+        'before_widget' => '<div class="py-7 mb-5  px-5 border border-lightBorder rounded-lg widget-style ">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="px-3 py-2 font-bold border-b-2 border-b-tag mb-3 ">',
         'after_title'   => '</h2>',
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'ناحیه کناری سایدبار(برای صفحه مقاله تکی و دسته بندی)  '),
-        'id'            => 'danati-sidebar-single',
+        'name'          => __( 'sidebar 2 '),
+        'id'            => 'sidebar-2',
         'description'   => __( 'test description' ),
-        'before_widget' => '<div class="p-4   bg-[#EBF4F6] mb-5 rounded-lg   ">',
+        'before_widget' => '<div class="py-7 mb-5  px-5 border border-lightBorder rounded-lg widget-style ">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="text-title  dark:text-darkTitle  font-semibold text-lg items-center px-3 border-r-8 border-r-[#F05827]">',
+        'before_title'  => '<h2 class="px-3 py-2 font-bold border-b-2 border-b-tag mb-3 ">',
         'after_title'   => '</h2>',
     ) );
 

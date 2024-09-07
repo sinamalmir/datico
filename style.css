@@ -129,10 +129,13 @@
     max-height: 150px !important;
     object-fit: cover;
 }
-.slider-img{
+.slider-img , .sidebar-img-size{
     max-height: 75px !important;
     object-fit: cover;
 }
+ .sidebar-img-size {
+     margin-bottom: 14px;
+ }
 .main-content-height {
     max-height: 235px !important;
     object-fit: cover;

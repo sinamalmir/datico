@@ -6,8 +6,12 @@
 
 
     <?php wp_head(); ?>
+    <?php $general = danati_get_option('sina_theme_general_options') ;
 
-    <link rel="icon" type="image/png" href="">
+    ?>
+
+
+    <link rel="icon" type="image/png" href="<?php echo $general[0]['sina_theme_faveIcon_option'] ; ?>">
 </head>
 
 <body class="bg-white ">
@@ -64,8 +68,18 @@
 <!-- desktop menu -->
 <div class=" menu  ">
     <nav class="container  relative px-4 py-4 flex justify-between items-center ">
-        <a class="text-3xl font-bold leading-none max-w-[160px]" href="#">
-            <img src="<?php echo get_template_directory_uri().'/assets/img/logo11.png'?>" alt="">
+        <a class="text-3xl font-bold leading-none max-w-[160px]" href="<?php home_url(); ?>">
+
+
+	        <?php $logo = $general[0]['sina_theme_logo_option'];
+	        if (isset($logo)){
+		        ?>   <img src="<?php echo $logo ?>" class="w-full"
+                          alt="logo" width="144" height="133">
+	        <?php } else{
+		        ?> <img src="<?php echo get_template_directory_uri().'/assets/img/logo11.png'?>" alt="">
+		        <?php
+	        }
+	        ?>
         </a>
         <div class="lg:hidden">
             <button class="navbar-burger flex items-center text-blue-600 p-3">

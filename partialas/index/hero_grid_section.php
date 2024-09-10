@@ -55,7 +55,7 @@
 			if ($the_query->have_posts());
 			while ($the_query->have_posts()) : $the_query->the_post();
 			?>
-			<a href="<?php the_permalink(); ?>" class=" relative item-card transition duration-300">
+			<a href="<?php the_permalink(); ?>" class=" relative item-card ">
 				<figure>
 					<?php
 					if (has_post_thumbnail()){
@@ -73,9 +73,10 @@
 					?>
 				</figure>
 				<div class=" text-white px-4 z-10">
-					<h3 class="text-xs transition duration-300  z-10 absolute bottom-5 md:text-lg font-bold ">
+					<h3 class="text-xs transition duration-300 custom-class1 z-10 absolute bottom-5 md:text-lg
+					font-bold ">
                         <?php echo get_the_title(); ?></h3>
-					<p class="hidden z-10 transition duration-300 absolute text-xs  mt-3"> <?php echo get_the_excerpt
+					<p class="hidden z-10  custom-class1 absolute text-xs  mt-3"> <?php echo get_the_excerpt
                         ();?> </p>
 				</div>
 

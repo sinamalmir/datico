@@ -32,6 +32,7 @@ include_once 'inc/ReadEstimateTime.php';
 include_once 'partialas/single/table-of-content.php';
 include_once 'inc/TimeModify.php';
 include_once 'inc/HotPostWidget.php';
+include_once 'elementor/danati-elementor.php';
 
 function custom_excerpt_length()
 {
@@ -51,30 +52,8 @@ add_filter('excerpt_more', 'new_excerpt_more');
 /**
  * Add a sidebar.
  */
-function danati_widgets_init() {
-    register_sidebar( array(
-        'name'          => __( 'ناحیه کناری سایدبار'),
-        'id'            => 'sidebar-1',
-        'description'   => __( 'test description' ),
-        'before_widget' => '<div class="py-7 mb-5  px-5 border border-lightBorder rounded-lg widget-style ">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="px-3 py-2 font-bold border-b-2 border-b-tag mb-3 ">',
-        'after_title'   => '</h2>',
-    ) );
-
-    register_sidebar( array(
-        'name'          => __( 'sidebar 2 '),
-        'id'            => 'sidebar-2',
-        'description'   => __( 'test description' ),
-        'before_widget' => '<div class="py-7 mb-5  px-5 border border-lightBorder rounded-lg widget-style ">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="px-3 py-2 font-bold border-b-2 border-b-tag mb-3 ">',
-        'after_title'   => '</h2>',
-    ) );
-
-}
-add_action( 'widgets_init', 'danati_widgets_init' );
-
+include_once 'inc/widgets/all-widgets.php';
+include_once 'theme-options/setting.php';
 
 
 

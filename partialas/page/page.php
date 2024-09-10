@@ -27,7 +27,7 @@ if (have_posts()) :
 			<article class=" py-7 px-3 md:px-6   ">
 				<div class=" ">
 
-					<h1 class="px-3 py-2 font-semibold text-xl md:text-2xl mb-3 "> <?php echo  get_the_title(); ?> </h1>
+<!--					<h1 class="px-3 py-2 font-semibold text-xl md:text-2xl mb-3 "> --><?php //echo  get_the_title(); ?><!-- </h1>-->
 
 					<p class="text-sm overflow-hidden md:text-lg article-content ">
 

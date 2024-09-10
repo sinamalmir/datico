@@ -39,7 +39,7 @@ function custom_excerpt_length()
 }
 
 add_filter('excerpt_length' , 'custom_excerpt_length',999);
-
+//add_filter( 'get_image_tag_class', '__return_empty_string' );
 function new_excerpt_more( $more ) {
 	return '';
 }

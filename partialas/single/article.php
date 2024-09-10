@@ -6,7 +6,7 @@ while (have_posts()) : the_post();
 ?>
 
 <div class="md:col-span-8 flex flex-col gap-8 ">
-	<article class=" py-7 px-3 md:px-6 border border-lightBorder rounded-lg  ">
+	<article class=" py-7 w-full px-3 md:px-6 border border-lightBorder rounded-lg  ">
 		<div class=" ">
             <ul class="flex gap-1 flex-wrap breadcrumb-custom items-center">
 	            <?php Breadcrumb::get_breadcrumb(); ?>
@@ -29,11 +29,7 @@ while (have_posts()) : the_post();
 				}
 				?>
 			</figure>
-			<p class="text-sm overflow-hidden md:text-lg article-content ">
-
-				<?php the_content(); ?>
-
-			</p>
+			<p class="text-sm overflow-hidden md:text-lg article-content "><?php the_content(); ?> </p>
 
 
 		</div>

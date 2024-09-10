@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
         $(this).text($(this).text() == '▽' ? '▽' : '▽');
     });
 });
-
+    // $('img').removeClass();
   const swiper1 = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,

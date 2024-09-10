@@ -1,6 +1,5 @@
 
 
-
 <div class=" py-7 px-3 md:px-6 border border-lightBorder rounded-lg ">
 	<div class=" ">
 		<h2 class="px-3 py-2 border-b-2 border-b-tag mb-3 ">مقالات مرتبط   </h2>
@@ -47,4 +46,3 @@
 
 	</div>
 </div>
-

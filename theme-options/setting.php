@@ -50,37 +50,41 @@ function danati_register_theme_options_metabox() {
 
 
     // تنظیمات بلاگ
-    $blog = $alloptions->add_field( array(
-        'id'          => 'pishro_blog_options',
-        'type'        => 'group',
-        'repeatable'  => false, // use false if you want non-repeatable group
-        'options'     => array(
-            'group_title'       => __( 'تنظیمات وبلاگ ', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
-            'sortable'          => false,
-            'closed'         => true, // true to have the groups closed by default
-            // 'remove_confirm' => esc_html__( 'Are you sure you want to remove?', 'cmb2' ), // Performs confirmation before removing group.
-        ),
-    ) );
-    $alloptions->add_group_field( $blog, array(
-        'name' => 'موقعیت سایدبار',
-        'id'   => 'pishro_blog_sidebar_option',
-        'type' => 'image_select',
-        'default' => 'side-left',
-        'options' => array(
-            'side-left' => array('title' => 'سایدبار چپ', 'img' =>  get_template_directory_uri().'/assets/img/left-side.png'),
-            'side-right' => array('title' => 'سایدبار راست', 'img' =>  get_template_directory_uri().'/assets/img/right-side.png'),
-            'full-width' => array('title' => 'بدون سایدبار', 'img' =>  get_template_directory_uri().'/assets/img/full-width.png'),
-        ),
+//    $blog = $alloptions->add_field( array(
+//        'id'          => 'pishro_blog_options',
+//        'type'        => 'group',
+//        'repeatable'  => false, // use false if you want non-repeatable group
+//        'options'     => array(
+//            'group_title'       => __( 'تنظیمات وبلاگ ', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+//            'sortable'          => false,
+//            'closed'         => true, // true to have the groups closed by default
+//            // 'remove_confirm' => esc_html__( 'Are you sure you want to remove?', 'cmb2' ), // Performs confirmation before removing group.
+//        ),
+//    ) );
+//    $alloptions->add_group_field( $blog, array(
+//        'name' => 'موقعیت سایدبار',
+//        'id'   => 'pishro_blog_sidebar_option',
+//        'type' => 'image_select',
+//        'default' => 'side-left',
+//        'options' => array(
+//            'side-left' => array('title' => 'سایدبار چپ', 'img' =>  get_template_directory_uri().'/assets/img/left-side.png'),
+//            'side-right' => array('title' => 'سایدبار راست', 'img' =>  get_template_directory_uri().'/assets/img/right-side.png'),
+//            'full-width' => array('title' => 'بدون سایدبار', 'img' =>  get_template_directory_uri().'/assets/img/full-width.png'),
+//        ),
+//
+//    ) );
 
-    ) );
+//	$alloptions->add_group_field( $blog, array(
+//		'name'             => 'نمایش یا عدم نمایش مطالب مرتبط',
+//		'id'               => 'show_related_post',
+//		'type'             => 'radio',
+////        'show_option_none' => true,
+//		'options'          => array(
+//			'on' => __( 'show', 'cmb2' ),
+//			'off'   => __( 'hide', 'cmb2' ),
+//		),
+//	) );
 
-    $alloptions->add_group_field( $blog, array(
-        'name' => 'نمایش یا عدم نمایش مطالب مرتبط',
-        'id'   => 'sina_theme_related_post_option',
-        'type' => 'toggle',
-        'active_value' => true,
-        'inactive_value'=> false,
-    ) );
 
 
 
